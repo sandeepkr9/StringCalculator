@@ -1,0 +1,8 @@
+<button class="primary"> Add and check value {{result}}</button><div>
+  <h2>String Calculator</h2>
+  <input [(ngModel)]="inputString" placeholder="Enter numbers" />
+  <button (click)="calculate()">Calculate</button>
+  <div *ngIf="result !== ''">
+    Result: {{ result }}
+  </div>
+</div>
